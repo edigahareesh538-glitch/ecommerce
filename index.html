@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOMMERCE</title>
+    <style>
+        .commers{
+            font-family: Arial, sans-serif;
+            width: 100%;
+        }
+        .searching{
+            display: flex;
+            flex-direction:row;
+            background: rgb(35, 35, 58);
+            padding: 15px 0 15px;
+        }
+        .search-container{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .dropdown-button, .search-button{
+            padding: 10px 15px;
+            border: none;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+        .search-input{
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            outline: none;
+        }
+        .search-button{
+            background-color: #ff9900;
+            color: white;
+        }
+        h2{
+            padding: 5px 5px;
+            margin: 10px 10px;
+            color: white;
+        }
+        h4{
+            padding: 5px 5px;
+            margin: 10px 10px;
+            color: white;
+        }
+        #select{
+            display: flex;
+            flex-direction:row;
+            background: rgb(59, 59, 75);
+            border-left: 5px;
+            margin-bottom: 0px;
+            padding-top: 9px;
+            
+        }
+        #select,h5{
+            margin: 0px 10px;
+            padding-left: 5px;
+            color: white;
+            margin-left: 0px;
+            margin-right: 0px;  
+        }
+        h5{
+            padding-right: 27px;
+        }
+        #slideproduct{
+            height: 95vh;
+            padding-top: 1px;
+            
+
+        }
+        .photocontent{
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 2cm;
+            border-radius: 5px;
+            width: 5.9cm;
+            
+        }
+        .box{
+            display: flex;
+            flex-direction: row;
+        }
+        .amazon-box{
+            width: 320px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .amazon-box:hover{
+            background-color: rgb(67, 180, 193);
+        }
+        .amazon-box2{
+            width: 320px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 4px;
+            
+        }
+        .amazon-box2:hover{
+            background-color: rgb(67, 180, 193);
+        }
+        .amazon-box3{
+            width: 320px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .amazon-box3:hover{
+            background-color: rgb(67, 180, 193);
+        }
+        .amazon-box4{
+            width: 320px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .amazon-box4:hover{
+            background-color: rgb(67, 180, 193);
+        }       
+        .title{
+            font-weight: bold;
+            margin-top: 18px;
+            margin-bottom: 12px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 12px;
+        }
+        .items img{
+            width: 100%;
+            height: 120px;
+            border-radius: 2px;
+        }
+        .items p{
+            font-size: 13px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="commers">
+        <div class="searching">
+            <h2>amazon.in</h2>
+            <p style="padding: 5px 5px;
+                margin: 10px 10px;
+                color: white;">Delivering to Mumbai 400070<br>
+            <b>📍Update location</b></p>
+            <div class="search-container">
+            <button class="dropdown-button">All</button>
+            <input class="search-input" placeholder="Search amazon.in">
+            <button class="search-button">search</button>
+            </div>
+            <h4>🏳️‍🌈EN</h4>
+            <p style="padding: 5px 5px;
+                margin: 10px 10px;
+                color: white;">Hello sign in<br><b>Account & Lists</b></p>
+            <p style="padding: 5px 5px;
+                margin: 10px 10px;
+                color: white;">Returns<br><b>& Orders</b></p>
+            <h4><a href="cart.html">🛒cart</a></h4>
+        </div>
+        <div id="select">
+            <h5>All</h5>
+            <h5>Fresh</h5>
+            <h5>Amazon miniTV</h5>
+            <h5>Sell</h5>
+            <h5>Bests ellers</h5>
+            <h5>Mobiles</h5>
+            <h5>Todays deals</h5>
+            <h5>Prime</h5>
+            <h5>customor service</h5>
+            <h5>Electronics</h5>
+            <h5>New Relesases</h5>
+            <h5>Home & Kitchen</h5>
+            <h5>PLAYGROUND</h5>
+            <h5>Watch Now | Free on </h5>
+            <h5>amazon<br>miniTV</h5>
+        </div>
+        <div id="slideproduct" style="background-image: url(collection.png);">
+            <div class="photocontent"><h3>Under $1,999</h3>
+            <p>Top rated Electronics<br>&accessories</p>
+            <p>Extra up to 10% off via coupons</p>
+                <p>📱 PAY ON<br>DELIVERY</p>
+                <p>EASY<br>RETURNS</p> 
+            </div>    
+        </div>
+        <div class="box">
+            <div class="amazon-box">
+                <div>
+                    <p class="title">Applications for your home | Up to 50% off</p>
+                    <div class="grid">
+                        <div class="items">
+                            <img src="ac.jpg">
+                            <p>Air conditioners</p>
+                        </div>
+                        <div class="items">
+                            <img src="fridge.jpg">
+                            <p>Refriderators</p>
+                        </div>
+                        <div class="items">
+                            <img src="oven.jpg">
+                            <p>Microwaves</p>
+                        </div>
+                        <div class="items">
+                            <img src="wash.png">
+                            <p>washing machines</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="amazon-box2">
+                <div>
+                    <p class="title">Up to 60% off | styles for men & women</p>
+                    <div class="grid">
+                        <div class="items">
+                            <img src="dress.jpg">
+                            <p>Girls dresses</p>
+                        </div>
+                        <div class="items">
+                            <img src="shoe.jpg">
+                            <p>shoes</p>
+                        </div>
+                        <div class="items">
+                            <img src="watch.jpg">
+                            <p>watches</p>
+                        </div>
+                        <div class="items">
+                            <img src="bag.jpg">
+                            <p>Bag & wallets</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="amazon-box3">
+                <div>
+                    <p class="title">Up to 79% off | for Kids</p>
+                    <div class="grid">
+                        <div class="items">
+                            <img src="doll.jpg">
+                            <p>Bid Teddy </p>
+                        </div>
+                        <div class="items">
+                            <img src="cartoy.jpg">
+                            <p>Kids Cars</p>
+                        </div>
+                        <div class="items">
+                            <img src="toys.jpg">
+                            <p>More Toys</p>
+                        </div>
+                        <div class="items">
+                            <img src="airtoy.jpg">
+                            <p>For Baby Toys</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="amazon-box4">
+                <div>
+                    <p class="title">Up to 80% off | Brand airpods</p>
+                    <div class="grid">
+                        <div class="items">
+                            <img src="vivo.jpg">
+                            <p></p>vivo airpods
+                        </div>
+                        <div class="items">
+                            <img src="plus.jpg">
+                            <p>1 plus airpods</p>
+                        </div>
+                        <div class="items">
+                            <img src="noise.jpg">
+                            <p>Noise airpods</p>
+                        </div>
+                        <div class="items">
+                            <img src="boat.jpg">
+                            <p>Boat airpods</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

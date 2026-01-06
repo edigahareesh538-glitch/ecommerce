@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+</head>
+<body>
+    <h1>My cart</h1>
+    <h2>Items</h2>
+    <div id="cart-items"></div>
+    <script>
+        let cart=JSON.parse(localStorage.getItem("cart"));
+        console.log(cart)
+
+        //show items in web page
+        let container=document.getElementById("cart-items");
+        if(!cart || cart.length===0){
+            container.innerHTML=`<p>your is Empty</p>`;
+        }
+        else{
+            cart.forEach(item => {
+                container.innerHTML=`
+                <div>
+                    <h4>${item.name}</h4>
+                    <p>price:&#8377;${item.price}</p>
+                    <p>Quantity: ${item.quantity}</p>
+                </div>
+                <hr />`;
+                
+            });
+        }
+
+
+
+
+    </script>
+</body>
+</html>
